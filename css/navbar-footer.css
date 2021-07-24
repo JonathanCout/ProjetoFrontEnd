@@ -80,8 +80,9 @@ body {
 /* Footer */
 
 footer {
-    width: 100%;
     height: auto;
+    width: 100%;
+    
     background-color: var(--azul-escuro-bg);
     padding-left: 0.5rem;
     box-shadow: 0 -.2rem 0.5rem 0 rgba( 31, 38, 135, 0.37 );
@@ -100,16 +101,16 @@ footer h5{
     color: var(--bege-bg);
 }
 
-.col .btn {
+footer .col .btn {
     border-radius: 40px;
     margin:.5rem;
     transition: transform .2s ease-in-out;
 }
 
-.col .btn:hover {
+footer .col .btn:hover {
     transform: scale(1.15);
 }
-.bi {
+footer .bi {
     color: black;
     font-size: 1.5rem;
 }
