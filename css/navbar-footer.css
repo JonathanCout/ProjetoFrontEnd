@@ -134,11 +134,13 @@ h5{
 
     .navbar-light .navbar-nav .nav-link:hover {
         transform: none;
+        box-shadow: none;
         color: inherit;
     }
-    .navbar-light .navbar-nav .nav-link:focus {
+    .navbar-light .navbar-nav .nav-link:active {
+        transition: .5s;
         transform: translateY(2px);
-        animation: teste 500ms alternate-reverse ;
+        animation: teste 400ms alternate-reverse ;
     }
 
 }
@@ -156,10 +158,16 @@ h5{
         color: black;
         padding: .5rem 1rem;
     }
+    5%{
+        color: var(--bege-bg);
+    }
     50% {
         background-color: var(--azul-medio-bg);
         color: var(--bege-bg);
         padding: .5rem 2rem;
+    }
+    80%{
+        color: var(--bege-bg);
     }
     100% {
         background-color: var(--azul-claro-bg);
