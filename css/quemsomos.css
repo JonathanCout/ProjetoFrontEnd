@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+	--bege-bg: #f2e0d0;
+	--azul-claro-bg: #04bfbf;
+	--azul-medio-bg: #04adbf;
+	--azul-escuro-bg: #027373;
+	--verde-bg: #658c0f;
+	--brango-bg: #fdfdfd;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #fdfdfd;
+}
+
+main {
+	margin-top: 10rem;
+}
+
+#apresentacaoEmpresa h1 {
+	color: #fdfdfd;
+	font-size: 1.5rem;
+	font-weight: 700;
+	padding: 1rem;
+}
+
+#apresentacaoEquipe h2 {
+	color: #fdfdfd;
+	font-size: 1.2rem;
+	font-weight: 700;
+	padding: 1rem;
+}
+
+#apresentacaoEmpresa h1,
+#apresentacaoEquipe h2 {
+	background: rgba(26, 89, 101, 0.7);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border-radius: 10px;
+	font-family: 'Nunito', sans-serif;
+}
+
+main h1::after {
+	content: ' ' url('../../assets/img/h2-pet-friendly.png');
+	position: relative;
+	top: 0.1rem;
+}
+
+main p {
+	margin-left: 0.5rem;
+}
+
+#apresentacaoEmpresa p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+}
+#apresentacaoEmpresa p,
+#apresentacaoEquipe p {
+	font-family: 'Poppins', sans-serif;
+	margin-top: 2rem;
+
+	margin-bottom: 2rem;
+	margin-left: 0.5rem;
+}
+#accordionEquipe {
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+}
+#accordionEquipe .accordion-item {
+	padding: 0;
+}
+h3.card-title {
+	text-align: center;
+}
+
+.accordion {
+	flex-basis: 24%;
+}
+.accordion button {
+	font-size: 1.2rem;
+}
+
+.card-body {
+	margin-bottom: 2rem;
+}
+
+.card-img {
+	margin-bottom: 1rem;
+	align-items: center;
+	border-radius: 30px;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.collapse.dont-collapse-sm {
+		display: block;
+		height: auto !important;
+		visibility: visible;
+	}
+
+	.collapse.dont-collapse-sm img {
+		max-width: 10rem;
+	}
+	.accordion-body {
+		padding: 0;
+	}
+}

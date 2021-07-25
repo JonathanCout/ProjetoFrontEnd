@@ -1,0 +1,112 @@
+:root {
+	--bege-bg: #f2e0d0;
+	--azul-claro-bg: #04bfbf;
+	--azul-medio-bg: #04adbf;
+	--azul-escuro-bg: #027373;
+	--verde-bg: #658c0f;
+	--brango-bg: #fff;
+}
+
+main {
+	margin-top: 3.5rem;
+	margin-bottom: -3.5rem;
+}
+
+.divider:after,
+.divider:before {
+	content: '';
+	flex: 1;
+	height: 1px;
+	background: #eee;
+}
+.h-custom {
+	height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+	.h-custom {
+		height: 100%;
+	}
+}
+
+.inputlabel {
+	color: rgb(172, 171, 171);
+}
+.forgotpassword {
+	text-decoration: none;
+}
+
+#botaoLogin {
+	background-color: #1a5965;
+	color: #fff;
+}
+
+#facebook {
+	background-color: #3b5998;
+	border-color: #3b5998;
+}
+
+#twitter {
+	background-color: #00acee;
+	border-color: #00acee;
+}
+
+#linkedin {
+	background-color: #0e76a8;
+	border-color: #0e76a8;
+}
+
+#footer {
+	background-color: #04bfbf;
+}
+
+#botaoContinuar {
+	background-color: var(--azul-claro-bg);
+	border-color: var(--azul-claro-bg);
+	color: #fff;
+}
+#botaoFechar {
+	background-color: rgb(253, 253, 253);
+	border-color: var(--azul-claro-bg);
+	color: var(--azul-claro-bg);
+}
+
+#botaoLogin:hover {
+	background-color: #969393;
+	color: #eee;
+	transition: background-color, 0.5s, color, 0.5s;
+}
+
+#facebook:hover {
+	background-color: #969393;
+	border-color: #969393;
+	color: #eee;
+	transition: background-color, 0.5s, color, 0.5s;
+}
+
+#twitter:hover {
+	background-color: #969393;
+	border-color: #969393;
+	color: #eee;
+	transition: background-color, 0.5s, color, 0.5s;
+}
+
+#linkedin:hover {
+	background-color: #969393;
+	border-color: #969393;
+	color: #eee;
+	transition: background-color, 0.5s, color, 0.5s;
+}
+
+#botaoContinuar:hover {
+	background-color: rgb(253, 253, 253);
+	border-color: var(--azul-claro-bg);
+	color: var(--azul-claro-bg);
+	transition: background-color, 0.7s, color, 0.5s;
+}
+
+#botaoFechar:hover {
+	background-color: var(--azul-claro-bg);
+	border-color: var(--azul-claro-bg);
+	color: #eee;
+	transition: background-color, 0.5s, color, 0.5s;
+}

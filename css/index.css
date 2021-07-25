@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+	--bege-bg: #f2e0d0;
+	--azul-claro-bg: #04bfbf;
+	--azul-medio-bg: #04adbf;
+	--azul-escuro-bg: #027373;
+	--verde-bg: #658c0f;
+	--brango-bg: #fdfdfd;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #fdfdfd;
+}
+
+main {
+	width: 100%;
+}
+
+main p {
+	font-family: 'Poppins', sans-serif;
+}

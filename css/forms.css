@@ -1,0 +1,136 @@
+/* Travel form */
+.travel-form {
+	width: 100%;
+	height: auto;
+	background: transparent;
+	box-sizing: border-box;
+}
+input[id='floatingInputOrigem'],
+input[id='floatingInputDestino'] {
+	width: 100%;
+	margin-right: 1rem;
+	background: rgba(255, 255, 255, 0.15);
+	border-radius: 0.8rem;
+}
+input[id='data'],
+input[id='time'] {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.15);
+	border-radius: 0.8rem;
+}
+/* Newsletter */
+.newsletter {
+	box-sizing: border-box;
+	border-radius: 0;
+	text-align: center;
+}
+.newsletter__title {
+	font-size: 26px;
+	text-align: center;
+	line-height: 30px;
+	line-break: normal;
+}
+.newsletter__subtitle {
+	color: #999;
+	text-align: center;
+	line-height: 15px;
+	line-break: normal;
+}
+.newsletter-form {
+	background-color: var(--brango-bg);
+	padding: 15px;
+	margin-bottom: 2rem;
+	box-shadow: 6px 8px 32px 6px rgba(31, 38, 135, 0.37);
+	box-sizing: border-box;
+	border-radius: 0.8rem;
+	max-width: 600px;
+}
+
+.newsletter__logo {
+	max-width: 60px;
+	max-height: 60px;
+}
+
+input[id='floatingInputEmail'],
+input[id='floatingInputName'] {
+	padding: 0.5rem;
+	border: none;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: var(--brango-bg);
+	color: #000;
+	outline: none;
+	box-sizing: border-box;
+	border-radius: 0;
+}
+/* Forms Buttons */
+button[id='news-btn'] {
+	background-color: #1a5965;
+	border-color: #1a5965;
+	color: #fff;
+	border-radius: 0.8rem;
+	padding: 15px;
+	cursor: pointer;
+	max-width: 100%;
+}
+
+button[id='travel-btn'] {
+	background-color: #1a5965;
+	border-color: #1a5965;
+	color: #fff;
+	border-radius: 0.8rem;
+	padding: 15px;
+	cursor: pointer;
+	max-width: 100%;
+}
+
+button[id='travel-btn']:hover,
+button[id='news-btn']:hover {
+	background-color: #91a6b4;
+	border-color: #91a6b4;
+	color: #000;
+}
+
+/* Forms Media querrys */
+
+@media screen and (min-width: 279px) and (max-width: 359px) {
+	.newsletter-form {
+		max-width: 260px;
+	}
+
+	.travel-form {
+		max-width: 260px;
+	}
+}
+
+@media screen and (min-width: 360px) and (max-width: 539px) {
+	.newsletter-form {
+		max-width: 320px;
+	}
+	.travel-form {
+		max-width: 320px;
+	}
+}
+
+@media screen and (min-width: 540px) and (max-width: 724px) {
+	.newsletter-form {
+		max-width: 500px;
+	}
+	.travel-form {
+		max-width: 500px;
+	}
+}
+
+@media screen and (min-width: 748px) {
+	.newsletter-form {
+		max-width: 600px;
+	}
+	.travel-form {
+		max-width: 700px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.travel-form {
+		max-width: 900px;
+	}
+}

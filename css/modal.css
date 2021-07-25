@@ -1,0 +1,21 @@
+.modal-title {
+	color: black;
+}
+.newsletter-modal {
+	text-align: center;
+}
+.modal__logo {
+	max-width: 90px;
+	padding-right: 1rem;
+	flex: left;
+}
+.modal {
+	margin: 0 auto;
+	padding: 1rem;
+	border-radius: 0.3rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal p {
+	text-align: center;
+}

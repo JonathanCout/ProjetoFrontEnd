@@ -1,0 +1,14 @@
+.banner {
+	background: url('../assets/img/bg-banner2.jpg') no-repeat center;
+	background-size: cover;
+	margin-top: 0;
+	width: 100%;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+.banner__title {
+	padding-top: 0.5rem;
+	background-color: #fdfdfd;
+	opacity: 0.6;
+}

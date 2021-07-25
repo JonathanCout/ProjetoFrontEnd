@@ -1,0 +1,23 @@
+.travel {
+	width: 100%;
+	/* 	background: url('../../assets/img/bg-paralax.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed; */
+}
+
+.travel .btn.btn-success {
+	background-color: #1a5965;
+	border: #1a5965 1px solid;
+}
+
+.travel .btn.btn-outline-success {
+	border: #1a5965 1px solid;
+	color: #1a5965;
+}
+
+.travel .btn.btn-outline-success:hover {
+	color: #fdfdfd;
+	background-color: #1a5965;
+}

@@ -1,0 +1,114 @@
+main {
+	margin-top: 3.5rem;
+	margin-bottom: -3.5rem;
+}
+
+.divider:after,
+.divider:before {
+	content: '';
+	flex: 1;
+	height: 1px;
+	background: #eee;
+}
+
+.h-custom {
+	height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+	.h-custom {
+		height: 100%;
+	}
+}
+
+.inputlabel {
+	color: rgb(172, 171, 171);
+}
+
+.forgotpassword {
+	text-decoration: none;
+}
+
+.buttonsize {
+	height: 10vh;
+	width: 40vw;
+	font-size: 16px;
+}
+
+#botaoCadastro {
+	background-color: #1a5965;
+	color: #fff;
+	border-color: #1a5965;
+}
+
+#footer {
+	background-color: #04bfbf;
+}
+
+:root {
+	--bege-bg: #f2e0d0;
+	--azul-claro-bg: #04bfbf;
+	--azul-medio-bg: #04adbf;
+	--azul-escuro-bg: #027373;
+	--verde-bg: #658c0f;
+	--brango-bg: #fff;
+}
+
+#botaoCadastro:hover {
+	background-color: #969393;
+	border-color: #969393;
+	color: #eee;
+	transition: background-color, 0.5s, color, 0.5s;
+}
+
+#botaoContinuar:hover {
+	background-color: rgb(253, 253, 253);
+	border-color: var(--azul-claro-bg);
+	color: var(--azul-claro-bg);
+	transition: background-color, 0.7s, color, 0.5s;
+}
+
+#botaoFechar:hover {
+	background-color: var(--azul-claro-bg);
+	border-color: var(--azul-claro-bg);
+	color: #eee;
+	transition: background-color, 0.5s, color, 0.5s;
+}
+
+#botaoContinuar {
+	background-color: var(--azul-claro-bg);
+	border-color: var(--azul-claro-bg);
+	color: #fff;
+}
+
+#botaoFechar {
+	background-color: rgb(253, 253, 253);
+	border-color: var(--azul-claro-bg);
+	color: var(--azul-claro-bg);
+}
+
+#botaoFacebook {
+	background-color: #3b5998;
+	border-color: #3b5998;
+	color: #fff;
+}
+
+#botaoFacebook:hover {
+	background-color: rgb(253, 253, 253);
+	border-color: #3b5998;
+	color: #3b5998;
+	transition: background-color, 0.7s, color, 0.5s;
+}
+
+#botaoGoogle {
+	background-color: var(--azul-claro-bg);
+	border-color: var(--azul-claro-bg);
+	color: #fff;
+}
+
+#botaoGoogle:hover {
+	background-color: rgb(253, 253, 253);
+	border-color: var(--azul-claro-bg);
+	color: var(--azul-claro-bg);
+	transition: background-color, 0.7s, color, 0.5s;
+}

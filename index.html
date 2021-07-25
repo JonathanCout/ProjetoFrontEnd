@@ -1,205 +1,738 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap Icons -->
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+		/>
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
 
-    <!-- Link CSS navbar-footer -->
-    <link rel="stylesheet" href="./css/navbar-footer.css">
+		<link rel="stylesheet" href="./css/index.css" />
+		<link rel="stylesheet" href="./css/banner.css" />
+		<link rel="stylesheet" href="./css/card.css" />
+		<link rel="stylesheet" href="./css/travel/travel.css" />
+		<link rel="stylesheet" href="./css/travel/travel__card.css" />
+		<link rel="stylesheet" href="./css/travel/travel__title.css" />
+		<link rel="stylesheet" href="./css/navbar.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
+		<link rel="stylesheet" href="./css/forms.css" />
+		<link rel="stylesheet" href="./css/modal.css" />
 
-    <!-- Título -->
-    <title>Início | Travel Dog</title>
+		<title>Início | Travel Dog</title>
 
-    <link rel="shortcut icon" href="./assets/logo.png">
-</head>
+		<!-- Fav Icon -->
+		<link rel="shortcut icon" href="./assets/img/logo.png" />
+	</head>
 
-<body>
-    <header>
-        <!-- Fixed navbar -->
-        <nav class="navbar navbar-light navbar-expand-md fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/logo.png" alt="Logo Travel Dogo" class="img">
-                    <strong id="logo">Travel Dog</strong>
-                </a>
-                <button class="btn navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                    aria-label="Toggle navigation">
+	<body>
+		<!-- HEAVER E NAVBAR -->
+		<header>
+			<!-- Fixed navbar -->
+			<nav class="navbar navbar-light navbar-expand-md fixed-top">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img
+							src="./assets/img/logo.png"
+							alt="Logo Travel Dogo"
+							class="img"
+						/>
+						<strong id="logo">Travel Dog</strong>
+					</a>
+					<button
+						class="btn navbar-toggler collapsed"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarCollapse"
+						aria-controls="navbarCollapse"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					></button>
+					<div
+						class="collapse navbar-collapse justify-content-end"
+						id="navbarCollapse"
+					>
+						<ul class="navbar-nav align-items-center">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">Início</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#locais">Locais</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./quemsomos.html">Quem Somos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./login.html">Log In</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
 
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                    <ul class="navbar-nav align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Locais</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Quem Somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Log In</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+		<main>
+			<!-- BANNER -->
+			<section class="banner">
+				<!-- Travel Form -->
+				<section class="banner d-flex flex-column justify-content-evenly">
+					<div class="banner__title d-flex flex-column justify-content-around">
+						<h2 class="text-center">Ajudamos você a viajar com seu pet</h2>
+						<p class="text-center">
+							Aqui na Travel Dog, todos nossos destinos são "pet friendly".
+						</p>
+					</div>
+					<section class="d-flex justify-content-center">
+						<form action="#travelForm-modal" method="#">
+							<div class="travel-form row d-sm-inline-flex">
+								<!-- Travel Form: inputs -->
+								<div class="row g-2">
+									<div class="col-sm">
+										<div class="form-floating">
+											<input
+												type="name"
+												class="form-control"
+												id="floatingInputOrigem"
+												placeholder="Selecione a origem"
+											/>
+											<label for="floatingOrigem">Origem</label>
+										</div>
+									</div>
+									<div class="col-sm">
+										<div class="form-floating">
+											<input
+												type="text"
+												class="form-control"
+												id="floatingInputDestino"
+												placeholder="Selecione o seu destino"
+											/>
+											<label for="floatingDestino flow-right">Destino</label>
+										</div>
+									</div>
+									<div class="form-floating">
+										<input
+											type="date"
+											class="form-control"
+											id="data"
+											placeholder="selecione a data"
+										/>
+										<label for="floatingData">Data</label>
+									</div>
+									<div class="form-floating">
+										<input
+											type="time"
+											class="form-control"
+											id="time"
+											placeholder="selecione o horario"
+										/>
+										<label for="floatingTime">Time</label>
+									</div>
+									<!-- Travel Form: button -->
+									<button
+										type="button"
+										class="btn btn-primary"
+										data-bs-toggle="modal"
+										data-bs-target="#travelForm-modal"
+										id="travel-btn"
+									>
+										Agendar Viagem
+									</button>
+								</div>
+							</div>
+						</section>
+						</form>
+				</section>
+			</section>
 
-    <!-- Início do footer -->
-    <footer class="footer mt-auto">
-        <h3>Idealizado e criado por:</h3>
-        <div class="d-flex flex-column flex-sm-row flex-wrap justify-content-around">
-            <div class="col text-center mx-md-3 mx-lg-5">
-                <div class="d-flex justify-content-center ">
+			<!-- Destinos -->
+			<section id="locais" class="travel m-auto mb-5">
+				<h2  class="travel__title text-center">Nossos destinos</h2>
+				<div
+					class="
+						travel
+						align-items-center align-items-sm-start
+						d-flex
+						flex-column flex-sm-row flex-xxl-column
+						justify-content-between
+						m-auto
+					"
+				>
+					<!-- Destinos Praias -->
+					<div
+						class="
+							travel__card
+							align-items-center align-items-xxl-start
+							d-flex
+							flex-column flex-xxl-row
+							items-xxl-end
+							justify-content-between
+							mb-xxl-5
+							ms-md-3 ms-xxl-0
+							pe-xxl-3
+							pb-xxl-5
+						"
+					>
+						<div
+							class="
+								travel__title--beach
+								align-self-center
+								mb-4 mb-xxl-0
+								ms-xxl-5
+								p-xxl-2
+							"
+						>
+							<h3 class="text-center">Praias</h3>
+							<div class="d-none d-sm-block">
+								<p>
+									Aproveite as melhores praias para levar o seu melhor amigo, só
+									aqui na:
+								</p>
+								<p>Travel Dog!</p>
+							</div>
+						</div>
 
-                    <button class="btn  btn-light">
-                        <a target=link href="">
-                            <i class="bi bi-github"></i>
-                        </a>
-                    </button>
+						<!-- Primeira Praia Card-->
+						<div class="card shadow-lg travel__card--beach">
+							<img
+								src="./assets/img/praias-luminosa.jpg"
+								class="card-img-top"
+								alt="Praia luminosa"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Praia Luminosa</h5>
+								<p class="card-text">Vhadhoo, Ilhas Maldivas</p>
 
-                    <button class="btn btn-light">
-                        <a target=link href="">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </button>
-                </div>
-                <h5>Aline Renata</h5>
-            </div>
-            <div class="col text-center mx-md-3 mx-lg-5">
-                <div class="d-flex justify-content-center">
-                    <button class="btn  btn-light">
-                        <a target=link href="">
-                            <i class="bi bi-github"></i>
-                        </a>
-                    </button>
+								<div
+									class="d-flex justify-content-around travel__beach--buttons"
+									>
+									<!-- Botão Collapse -->
+								<a
+										class="btn btn-outline-success"
+										data-bs-toggle="collapse"
+										href="#collapse--praias_luminosas"
+										role="button"
+										aria-expanded="false"
+										aria-controls="collapse--praias_luminosas"
+									>
+										Descrição
+									</a>
+									<a href="./vhadhoo.html" class="btn btn-success">Saiba Mais</a>
+								</div>
 
-                    <button class="btn  btn-light">
-                        <a target=link href="">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </button>
-                </div>
-                <h5>Ana Clara</h5>
-            </div>
-            <div class="col text-center mx-md-3 mx-lg-5">
-                <div class="d-flex justify-content-center">
-                    <button class="btn  btn-light">
-                        <a target=link href="">
-                            <i class="bi bi-github"></i>
-                        </a>
-                    </button>
+								<!-- COLLAPSE -->
+								<div class="collapse" id="collapse--praias_luminosas">
+									<div class="card card-body mt-2">
+										O espetacular "Mar das Estrelas" pode ser experimentado nesta ilha anualmente.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Segundo Praia Card-->
+						<div class="card shadow-lg travel__card--beach">
+							<img
+								src="./assets/img/praia-cristal.jpg"
+								class="card-img-top"
+								alt="Praia Cristal"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Praia do Cristal</h5>
+								<p class="card-text">Luisiana, EUA</p>
 
-                    <button class="btn  btn-light">
-                        <a target=link href="">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </button>
-                </div>
-                <h5>Carol Hakamada</h5>
-            </div>
-            <div class="col text-center mx-md-3 mx-lg-5">
-                <div class="d-flex justify-content-center">
-                    <button class="btn  btn-light">
-                        <a target=link href="https://github.com/felipsrosa/">
-                            <i class="bi bi-github"></i>
-                        </a>
-                    </button>
+								<div
+									class="d-flex justify-content-around travel__beach--buttons"
+								>
+								<!-- Botão Collapse -->
+									<a
+										class="btn btn-outline-success"
+										data-bs-toggle="collapse"
+										href="#collapse--praia_cristal"
+										role="button"
+										aria-expanded="false"
+										aria-controls="collapse--praia_cristal"
+									>
+										Descrição
+									</a>
+									<a href="./cristal.html" class="btn btn-success">Saiba Mais</a>
+								</div>
 
-                    <button class="btn  btn-light">
-                        <a target=link href="https://www.linkedin.com/in/felipe-s-rosa/">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </button>
-                </div>
-                <h5>Felipe Rosa</h5>
-            </div>
-            <div class="col text-center mx-md-3 mx-lg-5">
-                <div class="d-flex justify-content-center">
-                    <button class="btn  btn-light">
-                        <a target=link href="https://github.com/FernandoBrunoLima">
-                            <i class="bi bi-github"></i>
-                        </a>
-                    </button>
+								<!-- COLLAPSE -->
+								<div class="collapse" id="collapse--praia_cristal">
+									<div class="card card-body mt-2">
+										As cores e formas da areia dessa praia em Port Allen parecem impossíveis!
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Terceira Praia Card-->
+						<div class="card shadow-lg travel__card--beach">
+							<img
+								src="./assets/img/paraty.jpg"
+								class="card-img-top"
+								alt="Paraty"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Paraty</h5>
+								<p class="card-text">Rio de Janeiro, Brasil</p>
 
-                    <button class="btn  btn-light">
-                        <a target=link href="https://www.linkedin.com/in/fernando-bruno-lima-309b90123/">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </button>
-                </div>
-                <h5>Fernando Bruno</h5>
-            </div>
-            <div class="col text-center mx-md-3 mx-lg-5">
-                <div class="d-flex justify-content-center">
-                    <button class="btn  btn-light">
-                        <a target=link href="">
-                            <i class="bi bi-github"></i>
-                        </a>
-                    </button>
+								<div
+									class="d-flex justify-content-around travel__beach--buttons"
+								>
+									<a
+										class="btn btn-outline-success"
+										data-bs-toggle="collapse"
+										href="#collapse--paraty"
+										role="button"
+										aria-expanded="false"
+										aria-controls="collapse--paraty"
+									>
+										Descrição
+									</a>
+									<a href="./paraty.html" class="btn btn-success">Saiba Mais</a>
+								</div>
+								<!-- Botão Collapse -->
 
-                    <button class="btn  btn-light">
-                        <a target=link href="">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </button>
-                </div>
-                <h5>Jonathan Coutinho</h5>
-            </div>
-            <div class="col text-center mx-md-3 mx-lg-5">
-                <div class="d-flex justify-content-center">
-                    <button class="btn  btn-light">
-                        <a target=link href="">
-                            <i class="bi bi-github"></i>
-                        </a>
-                    </button>
+								<!-- COLLAPSE -->
+								<div class="collapse" id="collapse--paraty">
+									<div class="card card-body mt-2">
+										Bela cidade colonial, considerada Patrimônio Histórico Nacional, preserva até hoje os seus inúmeros encantos naturais e arquitetônicos.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Destinos Montanhas -->
+					<div
+						class="
+							align-items-center align-items-xxl-start
+							d-flex
+							flex-column flex-xxl-row-reverse
+							justify-content-between
+							mb-xxl-5
+							me-md-3 me-xxl-0
+							ps-xxl-3
+							pb-xxl-5
+							travel__card
+						"
+					>
+						<div
+							class="
+								travel__title--mountain
+								align-self-center
+								mb-4 mb-xxl-0
+								me-xxl-5
+								p-xxl-2
+							"
+						>
+							<h3 class="text-center">Montanhas</h3>
+							<div class="d-none d-sm-block">
+								<p>
+									Aproveite as melhores montanhas para levar o seu melhor amigo,
+									só aqui na:
+								</p>
+								<p>Travel Dog!</p>
+							</div>
+						</div>
 
-                    <button class="btn  btn-light">
-                        <a target=link href="">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </button>
-                </div>
-                <h5>Leonardo Santino</h5>
-            </div>
-            <div class="col text-center mx-md-3 mx-lg-5">
-                <div class="d-flex justify-content-center">
-                    <button class="btn  btn-light">
-                        <a target=link href="https://github.com/Pherls">
-                            <i class="bi bi-github"></i>
-                        </a>
-                    </button>
+						<!-- Primeira Montanha Card -->
+						<div class="card shadow-lg travel__card--mountain">
+							<img
+								src="./assets/img/cordilheira-dos-andes.jpg"
+								class="card-img-top"
+								alt="Cordilheira dos Andes"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Cordilheira dos Andes</h5>
+								<p class="card-text">Aconcágua, Argentina</p>
 
-                    <button class="btn btn-light">
-                        <a target=link href="https://www.linkedin.com/in/pherls/">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </button>
-                </div>
-                <h5>Pedro Lopes</h5>
-            </div>
+								<div
+									class="d-flex justify-content-around travel__beach--buttons"
+								>
+									<a
+										class="btn btn-outline-success"
+										data-bs-toggle="collapse"
+										href="#collapse--cordilheira_andes"
+										role="button"
+										aria-expanded="false"
+										aria-controls="collapse--cordilheira_andes"
+									>
+										Descrição
+									</a>
+									<a href="./andes.html" class="btn btn-success">Saiba Mais</a>
+								</div>
+								<!-- Botão Collapse -->
 
-        </div>
+								<!-- COLLAPSE -->
+								<div class="collapse" id="collapse--cordilheira_andes">
+									<div class="card card-body mt-2">
+										Os Andes, que contornam o lado ocidental da América do Sul, estão entre as mais extensas cordilheiras do mundo.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Segunda Montanha Card -->
+						<div class="card shadow-lg travel__card--mountain">
+							<img
+								src="./assets/img/chapada-diamantina.jpg"
+								class="card-img-top"
+								alt="Chapada Diamantina"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Chapada Diamantina</h5>
+								<p class="card-text">Bahia, Brasil</p>
 
-    </footer>
+								<div
+									class="d-flex justify-content-around travel__beach--buttons"
+								>
+									<a
+										class="btn btn-outline-success"
+										data-bs-toggle="collapse"
+										href="#collapse--chapada_diamantina"
+										role="button"
+										aria-expanded="false"
+										aria-controls="collapse--chapada_diamantina"
+									>
+										Descrição
+									</a>
+									<a href="./chapada.html" class="btn btn-success">Saiba Mais</a>
+								</div>
+								<!-- Botão Collapse -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous">
-    </script>
+								<!-- COLLAPSE -->
+								<div class="collapse" id="collapse--chapada_diamantina">
+									<div class="card card-body mt-2">
+										As montanhas mais altas do Nordeste brasileiro estão na Chapada Diamantina.
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Terceira Montanha Card -->
+						<div class="card shadow-lg travel__card--mountain">
+							<img
+								src="./assets/img/gros-piton.jpg"
+								class="card-img-top"
+								alt="Gros Piton"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Pitons</h5>
+								<p class="card-text">Micoud, St. Lucia</p>
+								<div
+									class="d-flex justify-content-around travel__beach--buttons"
+								>
+									<a
+										class="btn btn-outline-success"
+										data-bs-toggle="collapse"
+										href="#collapse--gros_piton"
+										role="button"
+										aria-expanded="false"
+										aria-controls="collapse--gros_piton"
+									>
+										Descrição
+									</a>
+									<a href="./pitons.html" class="btn btn-success">Saiba Mais</a>
+								</div>
+								<!-- Botão Collapse -->
+								<!-- COLLAPSE -->
+								<div class="collapse" id="collapse--gros_piton">
+									<div class="card card-body mt-2">
+										Esta área de conservação foi declarada pela UNESCO como Patrimônio da Humanidade.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-</body>
+			<!-- Newsletter -->
+			<section class="d-flex justify-content-center mb-5">
+				<div class="newsletter-form row d-inline-flex inline-block">
+					<div class="newsletter">
+						<img
+							class="newsletter__logo img-fluid float-left"
+							src="./assets/img/logo.png"
+							alt="Travel Dog logo"
+						/>
+						<span class="newsletter__title"> Newsletter?<br /></span>
+						<span class="newsletter__subtitle"
+							>Acompanhe os melhores destinos<br
+						/></span>
+						<span class="newsletter__subtitle"
+							>Assine nossa newsletter e receba as melhores ofertas</span
+						>
+					</div>
 
+					<!-- Newsletter: inputs -->
+
+					<form action="#newsletter-modal" method="#">
+
+
+
+						<div class="row g-2">
+							<div class="col-md">
+								<div class="form-floating">
+									<input
+										type="name"
+										class="form-control"
+										id="floatingInputName"
+										placeholder="name"
+									/>
+									<label for="floatingName">Digite seu nome</label>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="form-floating">
+									<input
+										type="email"
+										class="form-control"
+										id="floatingInputEmail"
+										placeholder="name@example.com"
+									/>
+									<label for="floatingEmail">Digite seu email</label>
+								</div>
+							</div>
+							<!-- Newsletter: buttons -->
+							<button
+								type="button"
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								data-bs-target="#newsletter-modal"
+								id="news-btn"
+							>
+								Assinar
+							</button>
+						</div>
+					</form>
+
+				</div>
+			</section>
+			<!-- News Modal  -->
+			<div
+				class="modal fade"
+				id="newsletter-modal"
+				tabindex="-1"
+				role="dialog"
+				aria-labelledby="newsletter"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content p-1">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalCenterTitle">
+								Newsletter
+							</h5>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="modal-body newsletter-modal px-3 py-2">
+							<img
+								class="modal__logo img-fluid float-left"
+								src="./assets/img/logo.png"
+								alt="Travel Dog logo"
+							/>
+							<p>Assinatura feita com sucesso!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Travel Form Modal -->
+			<div
+				class="modal fade"
+				id="travelForm-modal"
+				tabindex="-1"
+				role="dialog"
+				aria-labelledby="travelForm"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content p-1">
+						<div class="modal-header g-6">
+							<h5 class="modal-title" id="exampleModalCenterTitle">
+								Agendamento de Viagem
+							</h5>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="modal-body travelForm-modal px-3 py-2 text-left">
+							<p>
+								Viagem agendada com sucesso!
+								<br />
+								Obrigado por agendar com a <br /><strong>Travel Dogs</strong>.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- footer -->
+		<footer class="footer mt-auto">
+			<h3>Idealizado e criado por:</h3>
+			<div
+				class="d-flex flex-column flex-sm-row flex-wrap justify-content-around"
+			>
+				<div class="col text-center mx-md-3 mx-lg-5">
+					<div class="d-flex justify-content-center">
+						<button class="btn btn-light">
+							<a target="link" href="https://github.com/hachikohalline">
+								<i class="bi bi-github"></i>
+							</a>
+						</button>
+
+						<button class="btn btn-light">
+							<a target="link" href="https://www.linkedin.com/in/aline-renata-madruga-281400197/">
+								<i class="bi bi-linkedin"></i>
+							</a>
+						</button>
+					</div>
+					<h5>Aline Renata</h5>
+				</div>
+				
+				<div class="col text-center mx-md-3 mx-lg-5">
+					<div class="d-flex justify-content-center">
+						<button class="btn btn-light">
+							<a target="link" href="https://github.com/AnaClaraRCampos">
+								<i class="bi bi-github"></i>
+							</a>
+						</button>
+
+						<button class="btn btn-light">
+							<a target="link" href="https://www.linkedin.com/in/ana-clara-rezende-campos-391133218/">
+								<i class="bi bi-linkedin"></i>
+							</a>
+						</button>
+					</div>
+					<h5>Ana Clara</h5>
+				</div>
+
+				<div class="col text-center mx-md-3 mx-lg-5">
+					<div class="d-flex justify-content-center">
+						<button class="btn btn-light">
+							<a target="link" href="https://github.com/hakacarol">
+								<i class="bi bi-github"></i>
+							</a>
+						</button>
+
+						<button class="btn btn-light">
+							<a target="link" href="https://www.linkedin.com/in/hakacarolina/">
+								<i class="bi bi-linkedin"></i>
+							</a>
+						</button>
+					</div>
+					<h5>Carol Hakamada</h5>
+				</div>
+				<div class="col text-center mx-md-3 mx-lg-5">
+					<div class="d-flex justify-content-center">
+						<button class="btn btn-light">
+							<a target="link" href="https://github.com/felipsrosa/">
+								<i class="bi bi-github"></i>
+							</a>
+						</button>
+
+						<button class="btn btn-light">
+							<a
+								target="link"
+								href="https://www.linkedin.com/in/felipe-s-rosa/"
+							>
+								<i class="bi bi-linkedin"></i>
+							</a>
+						</button>
+					</div>
+					<h5>Felipe Rosa</h5>
+				</div>
+				<div class="col text-center mx-md-3 mx-lg-5">
+					<div class="d-flex justify-content-center">
+						<button class="btn btn-light">
+							<a target="link" href="https://github.com/FernandoBrunoLima">
+								<i class="bi bi-github"></i>
+							</a>
+						</button>
+
+						<button class="btn btn-light">
+							<a
+								target="link"
+								href="https://www.linkedin.com/in/fernando-bruno-lima-309b90123/"
+							>
+								<i class="bi bi-linkedin"></i>
+							</a>
+						</button>
+					</div>
+					<h5>Fernando Bruno</h5>
+				</div>
+				<div class="col text-center mx-md-3 mx-lg-5">
+					<div class="d-flex justify-content-center">
+						<button class="btn btn-light">
+							<a target="link" href="https://github.com/JonathanCout">
+								<i class="bi bi-github"></i>
+							</a>
+						</button>
+
+						<button class="btn btn-light">
+							<a target="link" href="https://www.linkedin.com/in/jqc-eng/">
+								<i class="bi bi-linkedin"></i>
+							</a>
+						</button>
+					</div>
+					<h5>Jonathan Coutinho</h5>
+				</div>
+				<div class="col text-center mx-md-3 mx-lg-5">
+					<div class="d-flex justify-content-center">
+						<button class="btn btn-light">
+							<a target="link" href="https://github.com/leonardosantino">
+								<i class="bi bi-github"></i>
+							</a>
+						</button>
+
+						<button class="btn btn-light">
+							<a target="link" href="https://www.linkedin.com/in/leonardosantino/">
+								<i class="bi bi-linkedin"></i>
+							</a>
+						</button>
+					</div>
+					<h5>Leonardo Santino</h5>
+				</div>
+				<div class="col text-center mx-md-3 mx-lg-5">
+					<div class="d-flex justify-content-center">
+						<button class="btn btn-light">
+							<a target="link" href="https://github.com/Pherls">
+								<i class="bi bi-github"></i>
+							</a>
+						</button>
+
+						<button class="btn btn-light">
+							<a target="link" href="https://www.linkedin.com/in/pherls/">
+								<i class="bi bi-linkedin"></i>
+							</a>
+						</button>
+					</div>
+					<h5>Pedro Lopes</h5>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		>
+	</script>
+	</body>
 </html>

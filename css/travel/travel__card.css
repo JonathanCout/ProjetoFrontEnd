@@ -1,0 +1,46 @@
+.travel__card {
+	width: 45%;
+}
+
+.travel__card h5 {
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	color: #000;
+}
+
+.travel__card p {
+	color: #000;
+	opacity: 0.6;
+}
+
+@media screen and (min-width: 767px) {
+	.travel__card img {
+		opacity: 0.8;
+		transition: all 0.5s ease-in-out;
+	}
+	.travel__card img:hover {
+		transform: scale(1.12);
+		opacity: 1;
+
+		box-shadow: black 0px 0px 20px;
+	}
+}
+
+.travel__card--beach,
+.travel__card--mountain {
+	flex-basis: 25%;
+}
+
+@media screen and (max-width: 767px) {
+	.travel__card {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.travel__card {
+		width: 100%;
+	}
+}

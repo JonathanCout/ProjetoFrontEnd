@@ -1,0 +1,36 @@
+/* TRAVEL */
+.travel__title {
+	margin: 6rem 0 4rem 0;
+	padding: 2rem;
+	font-family: 'Nunito', sans-serif;
+	background: #02737359;
+}
+
+.travel__title::after {
+	content: ' ' url('../../assets/img/h2-pet-friendly.png');
+	position: relative;
+	top: 0.1rem;
+}
+
+.travel__title--beach,
+.travel__title--mountain {
+	width: 100%;
+	flex-basis: 10%;
+	background: rgba(2, 115, 115, 0.35);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.travel__title--beach h3,
+.travel__title--mountain h3 {
+	color: #0e4e23;
+	text-align: center;
+}
+
+.travel__title--beach p,
+.travel__title--mountain p {
+	margin-left: 0.6rem;
+}

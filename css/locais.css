@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+	scroll-behavior: smooth;
+	--bege-bg: #f2e0d0;
+	--azul-claro-bg: #04bfbf;
+	--azul-medio-bg: #04adbf;
+	--azul-escuro-bg: #027373;
+	--verde-bg: #658c0f;
+}
+
+body {
+	background-color: #fdfdfd;
+}
+
+main {
+	width: 100%;
+	margin-top: 10rem;
+	margin-bottom: 6rem;
+}
+
+/* .container-fluid {
+	display: block;
+	padding: 0;
+} */
+
+h1 {
+	font-family: 'Nunito', sans-serif;
+	font-size: 60px;
+	margin: 0;
+}
+
+.carousel-item img {
+	object-fit: cover;
+}
+
+.carousel-item img {
+	height: 500px;
+}
+
+.apresentacao {
+	margin-top: 30px;
+}
+
+.row {
+	padding: 10px;
+	margin: 0;
+}
+
+.card {
+	border-radius: 20px;
+	border-style: none;
+	box-shadow: 0px 0px 10px 0px rgb(2 115 115 / 10%);
+}
+
+.card-title {
+	color: #000;
+	font-weight: 700;
+}
+
+.btn.btn-primary {
+	background-color: var(--azul-medio-bg);
+	color: white;
+	border-color: none;
+	border-radius: 15px;
+	padding: 8px 30px;
+	font-weight: 500;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.btn.btn-primary:hover {
+	background-color: var(--azul-claro-bg);
+	color: var(--bege-bg);
+	border-color: none;
+}
+
+.form-control {
+	border-radius: 15px;
+	border-style: dotted;
+}
+
+.paragrafo {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	padding: 20px;
+}
+
+@media (min-width: 600px) {
+	.row {
+		padding: 10px 90px;
+		margin: 0;
+	}
+}
+
+@media (min-width: 800px) {
+	.row {
+		padding: 10px 240px;
+		margin: 0;
+	}
+}
+
+@media (min-width: 1025px) {
+	.row {
+		padding: 10px 460px;
+		margin: 0;
+	}
+}
+
+/* @media (min-width:320px) { smartphones, portrait iPhone, portrait 480x320 phones (Android) } */
+/* @media (min-width:480px) { smartphones, Android phones, landscape iPhone } */
+/* @media (min-width:600px) { portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) } */
+/* @media (min-width:801px) { tablet, landscape iPad, lo-res laptops ands desktops } */
+/* @media (min-width:1025px) { big landscape tablets, laptops, and desktops } */
+/* @media (min-width:1281px) { hi-res laptops and desktops } */
