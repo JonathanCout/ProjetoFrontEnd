@@ -96,17 +96,30 @@ h3.card-title {
 	width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
 	.collapse.dont-collapse-sm {
 		display: block;
 		height: auto !important;
 		visibility: visible;
 	}
-
+   .list-accordion {
+		display: flex;
+		flex-direction: row !important;
+	}
 	.collapse.dont-collapse-sm img {
 		max-width: 10rem;
 	}
 	.accordion-body {
 		padding: 0;
+	}
+
+	.accordion button {
+		display: none;
+	}
+}
+
+@media (max-width: 900px) {
+	.card-img {
+		width: 10rem;
 	}
 }
