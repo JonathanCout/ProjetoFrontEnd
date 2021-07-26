@@ -7,9 +7,6 @@
 	--brango-bg: #fff;
 }
 
-main {
-	padding-top: 8rem;
-}
 
 .divider:after,
 .divider:before {
@@ -110,4 +107,11 @@ main {
 	border-color: var(--azul-claro-bg);
 	color: #eee;
 	transition: background-color, 0.5s, color, 0.5s;
+}
+
+
+@media (max-width:1200px) {
+	main {
+		padding-top: 2rem;
+	}
 }

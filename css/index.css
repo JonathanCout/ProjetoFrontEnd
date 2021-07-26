@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&display=swap');
 
 :root {
 	--bege-bg: #f2e0d0;
@@ -8,10 +7,6 @@
 	--azul-escuro-bg: #027373;
 	--verde-bg: #658c0f;
 	--brango-bg: #fdfdfd;
-}
-
-#conteudo {
-	padding-top: 3rem;
 }
 
 html {
