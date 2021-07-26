@@ -10,7 +10,6 @@
 
 main {
 	padding-top: 8rem;
-	padding-bottom: 4rem;
 }
 
 .divider:after,
@@ -19,6 +18,16 @@ main {
 	flex: 1;
 	height: 1px;
 	background: #eee;
+}
+
+.h-custom {
+	height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+	.h-custom {
+		height: 100%;
+	}
 }
 
 .inputlabel {
@@ -39,6 +48,10 @@ main {
 	background-color: #1a5965;
 	color: #fff;
 	border-color: #1a5965;
+}
+
+#footer {
+	background-color: #04bfbf;
 }
 
 #botaoCadastro:hover {
