@@ -125,3 +125,16 @@
 		margin: 3rem 0;
 	}
 }
+
+@media (max-width: 992px) {
+	main {
+		margin: 3rem 0;
+	}
+}
+
+@media (min-width: 1140px) {
+	main {
+		margin-top: 6rem;
+		margin-bottom: 10rem;
+	}
+}
