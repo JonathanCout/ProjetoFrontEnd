@@ -1,6 +1,15 @@
+:root {
+	--bege-bg: #f2e0d0;
+	--azul-claro-bg: #04bfbf;
+	--azul-medio-bg: #04adbf;
+	--azul-escuro-bg: #027373;
+	--verde-bg: #658c0f;
+	--brango-bg: #fff;
+	scroll-behavior: smooth;
+}
+
 main {
-	margin-top: 3.5rem;
-	margin-bottom: -3.5rem;
+	padding-top: 8rem;
 }
 
 .divider:after,
@@ -30,9 +39,9 @@ main {
 }
 
 .buttonsize {
-	height: 10vh;
-	width: 40vw;
-	font-size: 16px;
+	height: 10%;
+	width: 40%;
+	font-size: 0.1rem;
 }
 
 #botaoCadastro {
@@ -43,15 +52,6 @@ main {
 
 #footer {
 	background-color: #04bfbf;
-}
-
-:root {
-	--bege-bg: #f2e0d0;
-	--azul-claro-bg: #04bfbf;
-	--azul-medio-bg: #04adbf;
-	--azul-escuro-bg: #027373;
-	--verde-bg: #658c0f;
-	--brango-bg: #fff;
 }
 
 #botaoCadastro:hover {
@@ -85,6 +85,11 @@ main {
 	background-color: rgb(253, 253, 253);
 	border-color: var(--azul-claro-bg);
 	color: var(--azul-claro-bg);
+}
+
+#botaoFacebook,
+#botaoGoogle {
+	width: 50%;
 }
 
 #botaoFacebook {

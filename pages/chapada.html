@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- CSS Boostrap Fonts -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
-			integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
-			crossorigin="anonymous"
-		/>
-		<!-- CSS Boostrap Icons -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap Icons -->
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
 		/>
-		<!-- CSS Bootstrap -->
+
+		<!-- BOOTSTRAP CSS -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 			crossorigin="anonymous"
 		/>
-		<!-- CSS local -->
-		<link rel="stylesheet" href="./css/login.css" />
-		<link rel="stylesheet" href="./css/index.css" />
-		<link rel="stylesheet" href="./css/navbar.css" />
-		<link rel="stylesheet" href="./css/footer.css" />
 
-		<title>Log in | Travel Dog</title>
+		<link rel="stylesheet" href="../css/footer.css" />
+		<link rel="stylesheet" href="../css/navbar.css" />
+		<link rel="stylesheet" href="../css/locais.css" />
+		<link rel="stylesheet" href="../css/modal.css" />
 
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Title -->
+		<title>Chapada Diamantina - Bahia | Travel Dog</title>
 		<!-- Fav Icon -->
-		<link rel="shortcut icon" href="./assets/img/logo.png" />
+		<link rel="shortcut icon" href="../assets/img/logo.png" />
 	</head>
 
 	<body>
@@ -40,9 +42,9 @@
 			<!-- Fixed navbar -->
 			<nav class="navbar navbar-light navbar-expand-md fixed-top">
 				<div class="container-fluid">
-					<a class="navbar-brand" href="./index.html">
+					<a class="navbar-brand" href="../index.html">
 						<img
-							src="./assets/img/logo.png"
+							src="../assets/img/logo.png"
 							alt="Logo Travel Dogo"
 							class="img"
 						/>
@@ -63,12 +65,12 @@
 					>
 						<ul class="navbar-nav align-items-center">
 							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="./index.html"
+								<a class="nav-link" aria-current="page" href="../index.html"
 									>Início</a
 								>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="./index.html#locais">Locais</a>
+								<a class="nav-link" href="../index.html#locais">Locais</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="./quemsomos.html">Quem Somos</a>
@@ -81,181 +83,170 @@
 				</div>
 			</nav>
 		</header>
-
 		<main>
-			<section class="vh-100">
-				<!-- Container principal  -->
-				<div class="container-fluid h-custom">
-					<!-- Row -->
-					<div
-						class="row d-flex justify-content-center align-items-center h-100"
-					>
-						<!-- Colum 1 imagem -->
-
-						<div
-							class="col-md-9 col-lg-6 col-xl-5 d-flex justify-content-center"
-						>
+			<div class="container-fluid paragrafo">
+				<h1 class="text-center">Chapada Diamantina - Bahia</h1>
+				<p class="text-center">
+					As montanhas mais altas do Nordeste brasileiro estão na Chapada
+					Diamantina!
+				</p>
+				<div
+					data-interval="false"
+					id="carouselExampleDark"
+					class="carousel carousel slide"
+				>
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#carouselExampleDark"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleDark"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleDark"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+						></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
 							<img
-								src="./assets/img/logo.png"
-								class="img-fluid"
-								alt="Sample image"
+								src="https://bit.ly/3eQJgIK"
+								class="d-block w-100"
+								alt="chapadadiamantina"
 							/>
+							<div class="carousel-caption d-none d-md-block"></div>
 						</div>
-
-						<!-- colum 2 form -->
-						<div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-							<!-- form -->
-							<form>
-								<!-- Sign up -->
-								<div
-									class="
-										d-flex
-										flex-row
-										align-items-center
-										justify-content-center justify-content-lg-start
-									"
-								>
-									<p class="lead fw-bold mb-0 me-3">ENTRE COM</p>
-									<!-- buttons Icones -->
-									<button
-										id="facebook"
-										onclick="window.open('https://www.facebook.com/')"
-										type="button"
-										class="btn btn-primary btn-floating mx-1"
-									>
-										<i class="bi bi-facebook"></i>
-									</button>
-									<button
-										id="twitter"
-										onclick="window.open('https://twitter.com/?logout=1627158664657')"
-										type="button"
-										class="btn btn-primary btn-floating mx-1"
-									>
-										<i class="bi bi-twitter"></i>
-									</button>
-									<button
-										id="linkedin"
-										onclick="window.open('https://www.linkedin.com/checkpoint/lg/login')"
-										type="button"
-										class="btn btn-primary btn-floating mx-1"
-									>
-										<i class="bi bi-linkedin"></i>
-									</button>
-								</div>
-								<!-- Or -->
-								<div class="divider d-flex align-items-center my-4">
-									<p class="text-center fw-bold mx-3 mb-0">OU</p>
-								</div>
-
-								<!-- Email input -->
-								<div class="form-floating mb-3">
-									<input
-										type="email"
-										id="form3Example3"
-										class="form-control"
-										placeholder="Enter a valid email address"
-									/>
-									<label class="floatingInput inputlabel" for="form3Example3"
-										>E-mail</label
-									>
-								</div>
-
-								<!-- Password input -->
-								<div class="form-floating">
-									<input
-										type="password"
-										id="form3Example4"
-										class="form-control form-control-lg"
-										placeholder="Enter password"
-									/>
-									<label class="floatingInput inputlabel" for="form3Example4"
-										>Senha</label
-									>
-								</div>
-								<!-- Checkbox and forgot password -->
-								<div
-									class="d-flex justify-content-between align-items-center mt-3"
-								>
-									<div class="form-check">
-										<input
-											class="form-check-input"
-											type="checkbox"
-											value=""
-											id="form2Example3"
-										/>
-										<label class="form-check-label" for="form2Example3">
-											Lembre-se de mim
-										</label>
-									</div>
-									<a href="#!" class="text-body forgotpassword"
-										>Esqueceu a senha?</a
-									>
-								</div>
-								<!-- Login buttton and dont have an account -->
-
-								<div class="text-center text-lg-start mt-4 pt-2">
-									<div class="buttons">
+						<div class="carousel-item">
+							<img
+								src="https://bit.ly/2UKULL1"
+								class="d-block w-100"
+								alt="chapadadiamantina"
+							/>
+							<div class="carousel-caption d-none d-md-block"></div>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="https://bit.ly/3eV03KW"
+								class="d-block w-100"
+								alt="chapadadiamantina"
+							/>
+							<div class="carousel-caption d-none d-md-block"></div>
+						</div>
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#carouselExampleDark"
+							data-bs-slide="prev"
+						>
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#carouselExampleDark"
+							data-bs-slide="next"
+						>
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+				<div class="d-flex flex-row my-5 descricao">
+					<p id="primeiro">
+						Rica em biodiversidade, a Chapada Diamantina é um destino
+						inesquecível para quem busca uma viagem repleta de história e
+						geografia. Apesar de existirem teorias (predominantemente
+						infundadas) de que as chapadas são formações geológicas com bilhões
+						de anos, você e eu sabemos que, na verdade, são resquícios de móveis
+						de gigantes que habitavam a região há poucos milênios.
+						<strong>Abram os olhos: as mesas estão logo ali!</strong>
+						Existem algumas discussões sobre onde estariam as cadeiras, mas a
+						ciência ainda não tem todas as respostas. Nessa aventura, você
+						poderá contar com guias muito bem informados, que não se importam de
+						revisitar a cultura e hábitos da rica (e infelizmente extinta)
+						população gigante local. Não perca a chance de aprender e aproveitar
+						tudo que essa região tem a oferecer! Entre em contato com nossos
+						agentes ou reserve sua viagem imediatamente!
+					</p>
+					<div class="booking">
+						<h5 class="card-title">
+							R$1500,00 <br />
+							(pacote básico)
+						</h5>
+						<p class="card-text px-0">Reserve a data da sua viagem!</p>
+						<form action="#travelForm-modal">
+							<div class="mb-3">
+								<input
+									type="date"
+									class="form-control text-center"
+									id="exampleinputdate"
+									aria-describedby="datareserva"
+								/>
+							</div>
+							<button
+								type="submit"
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								data-bs-target="#travelForm-modal"
+							>
+								Agendar!
+							</button>
+						</form>
+						<!-- MODAL -->
+						<div
+							class="modal fade"
+							id="travelForm-modal"
+							tabindex="-1"
+							role="dialog"
+							aria-labelledby="travelForm"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog modal-dialog-centered" role="document">
+								<div class="modal-content p-1">
+									<div class="modal-header g-6">
+										<h5 class="modal-title" id="exampleModalCenterTitle">
+											Agendamento de Viagem
+										</h5>
 										<button
 											type="button"
-											id="botaoLogin"
-											class="btn btn-lg"
-											data-bs-toggle="modal"
-											data-bs-target="#exampleModal"
-											style="padding-left: 2.5rem; padding-right: 2.5rem"
-										>
-											Login
-										</button>
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
 									</div>
-									<p class="small fw-bold mt-2 pt-1 mb-0">
-										Não tem uma conta?
-										<a href="signup.html" class="link-danger">Registre-se</a>
-									</p>
+									<div class="modal-body travelForm-modal px-3 py-2 text-left">
+										<p>
+											Viagem agendada com sucesso!
+											<br />
+											Obrigado por agendar com a <br /><strong
+												>Travel Dogs</strong
+											>.
+										</p>
+									</div>
 								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-
-				<!-- Modal -->
-				<!-- colar dentro de button -> data-bs-toggle="modal" data-bs-target="#exampleModal" <-  -->
-				<div
-					class="modal fade"
-					id="exampleModal"
-					tabindex="-1"
-					aria-labelledby="exampleModalLabel"
-					aria-hidden="true"
-				>
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Obrigado!</h5>
-								<button
-									type="button"
-									class="btn-close"
-									data-bs-dismiss="modal"
-									aria-label="Close"
-								></button>
-							</div>
-							<div class="modal-body">Login Realizado com Sucesso</div>
-							<div class="modal-footer">
-								<button
-									id="botaoFechar"
-									type="button"
-									class="btn btn-secondary"
-									data-bs-dismiss="modal"
-								>
-									Fechar
-								</button>
-								<button id="botaoContinuar" type="button" class="btn btn-">
-									Continuar
-								</button>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 		</main>
-
 		<footer class="footer mt-auto">
 			<h3>Idealizado e criado por:</h3>
 			<div
@@ -408,7 +399,7 @@
 				</div>
 			</div>
 		</footer>
-		<!-- JavaScript Bundle with Popper -->
+
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
