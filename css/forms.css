@@ -18,6 +18,12 @@ input[id='time'] {
 	background: rgba(255, 255, 255, 0.15);
 	border-radius: 0.8rem;
 }
+
+.travel-form input:hover {
+	background-color: #fdfdfd;
+	opacity: 0.6;
+}
+
 /* Newsletter */
 .newsletter {
 	box-sizing: border-box;
